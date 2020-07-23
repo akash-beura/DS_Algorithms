@@ -1,0 +1,48 @@
+package dynamicprogramming;
+
+import java.util.HashSet;
+import java.util.TreeSet;
+
+public class DicesWithFaces {
+
+	int[][] dp;
+
+	public int solve(int dices, int faces, int sum) {
+		if (dices == 0 || faces == 0 || sum == 0) {
+			return 0;
+		}
+		int result = 0;
+		for (int i = faces; i >= 1; i--) {
+			int temp = result;
+			if (i <= sum) {
+				temp = 1 + solve(dices - 1, faces, sum - i) + solve(dices - 1, faces, sum);
+			} else {
+				continue;
+			}
+			result += temp;
+		}
+		new TreeSet<>().descendingSet();
+		return result;
+	}
+
+	public int numRollsToTarget(int d, int f, int target) {
+		dp = new int[d + 1][target + 1];
+		return solve(d, f, target);
+	}
+
+	public static void main(String[] args) {
+//		System.out.println(new DicesWithFaces().numRollsToTarget(1, 6, 3));
+
+		TreeSet<String> ts = new TreeSet<>((s1, s2) -> {
+			if(s1.length() > s2.length()) {
+				return 1;
+			} else {
+				return -1;
+			}
+			return 1;
+		});
+		ts.add("abc");
+		ts.add("abcd");
+		
+	}
+}

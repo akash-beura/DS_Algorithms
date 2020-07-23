@@ -1,0 +1,11 @@
+package com.wityo.dynamicprogramming.bellmanford;
+
+class Edge {
+	int source;
+	int destination;
+	int weight;
+}
+
+public class BellmanFord {
+
+}

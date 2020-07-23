@@ -1,0 +1,9 @@
+package backtracking;
+
+public class StringPermutation {
+
+	public void stringPermutation(char[] word, int[] count, char[] result, int level) {
+
+	}
+
+}

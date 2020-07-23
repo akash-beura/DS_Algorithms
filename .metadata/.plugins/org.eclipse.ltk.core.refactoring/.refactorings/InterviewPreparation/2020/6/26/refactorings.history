@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;peoples&apos; in &apos;amazon.ZombieMatrix.zombifyHuman(...)&apos; to &apos;freshPeople&apos;&#x0D;&#x0A;- Original project: &apos;InterviewPreparation&apos;&#x0D;&#x0A;- Original element: &apos;amazon.ZombieMatrix.zombifyHuman(List&lt;List&lt;Integer&gt;&gt;).peoples&apos;&#x0D;&#x0A;- Renamed element: &apos;peoples&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;peoples&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;amazon{ZombieMatrix.java[ZombieMatrix~zombifyHuman~QList\&lt;QList\&lt;QInteger;&gt;;&gt;;@peoples!419!460!435!441!QHashSet\&lt;QZombie;&gt;;!0!false" name="freshPeople" references="true" stamp="1592977210037" version="1.0"/>
+</session>

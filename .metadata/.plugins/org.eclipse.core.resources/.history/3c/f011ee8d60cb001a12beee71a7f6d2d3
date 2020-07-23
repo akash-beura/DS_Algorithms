@@ -1,0 +1,22 @@
+package graphs;
+
+import java.util.LinkedList;
+import java.util.List;
+
+class Graph {
+	private int V;
+	private List<Integer>[] adj;
+
+	Graph(final int v) {
+		this.V = v;
+		adj = new LinkedList[v];
+		for(int i=0;i<v;i++) {
+			ad[]
+		}
+	}
+
+}
+
+public class GraphTraversal {
+
+}

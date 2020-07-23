@@ -1,0 +1,34 @@
+package dynamicprogramming;
+
+public class DicesWithFaces {
+
+	int[][] dp;
+
+	public int solve(int dices, int faces, int sum) {
+
+		if (dices == 0 || faces == 0) {
+			return 0;
+		}
+		if (dp[dices][sum] != 0) {
+			return dp[dices][sum];
+		}
+		int result = 0;
+		for (int i = faces; i >= 1; i++) {
+			if (i <= sum) {
+				dp[dices][sum] = 1 + solve(dices - 1, faces, sum - i) + solve(dices - 1, faces, sum);
+			} else {
+				dp[dices][sum] = solve(dices - 1, faces, sum);
+			}
+		}
+		return dp[dices][sum];
+	}
+
+	public int numRollsToTarget(int d, int f, int target) {
+		dp = new int[d + 1][target + 1];
+		return solve(d, f, target);
+	}
+
+	public static void main(String[] args) {
+		System.out.println(new DicesWithFaces().numRollsToTarget(1, 6, 3));
+	}
+}

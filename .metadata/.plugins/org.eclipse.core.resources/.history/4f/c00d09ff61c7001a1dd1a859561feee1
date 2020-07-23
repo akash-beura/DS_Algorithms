@@ -1,0 +1,35 @@
+package dynamicprogramming;
+
+public class ZeroOneKS {
+
+	public static int[][] dp;
+
+	public int solve(int weights[], int[] profits, int n, int w) {
+		if (n == 0 || w == 0) {
+			return 0;
+		}
+
+		if (weights[n - 1] <= w) {
+			return Math.max(profits[n - 1] + solve(weights, profits, n - 1, w - weights[n - 1]),
+					solve(weights, profits, n - 1, w));
+		} else {
+			return solve(weights, profits, n - 1, w);
+		}
+
+	}
+
+	public static void main(String[] args) {
+		int[] weights = { 10, 20, 30 };
+		int[] profits = { 60, 100, 120 };
+		int n = weights.length;
+		int weight = 50;
+		ZeroOneKS ob = new ZeroOneKS();
+		System.out.println(ob.solve(weights, profits, n, weight));
+
+		dp = new int[n][weight];
+		
+		for(int i = 0; i<weight.l)
+		
+	}
+
+}

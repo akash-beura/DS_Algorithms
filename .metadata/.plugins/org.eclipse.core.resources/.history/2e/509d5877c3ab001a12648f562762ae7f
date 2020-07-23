@@ -1,0 +1,30 @@
+package com.wityo.dynamicprogramming.bellmanford;
+
+class Edge {
+	public Edge(int source, int destination, int weight) {
+		super();
+		this.source = source;
+		this.destination = destination;
+		this.weight = weight;
+	}
+
+	int source;
+	int destination;
+	int weight;
+
+}
+
+class Graph{
+	Edge[] edge;
+	int v, e;
+	
+	public Graph(int V, int E) {
+		v = V;
+		e = E;
+		edge = new Edge[i];
+	}
+}
+
+public class BellmanFord {
+
+}

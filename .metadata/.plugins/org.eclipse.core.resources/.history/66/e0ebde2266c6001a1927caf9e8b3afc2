@@ -1,0 +1,33 @@
+package dynamicprogramming;
+
+public class CatalanNumbers {
+
+	public int findCatalan(int n) {
+		if (n <= 1) {
+			return 1;
+		}
+		int res = 0;
+		for (int i = 0; i < n; i++) {
+			res += findCatalan(i) * findCatalan(n - i - 1);
+		}
+		return res;
+	}
+
+	public int findCatalanDP(int n) {
+		int[] res = new int[n + 1];
+		res[0] = 1;
+		res[1] = 1;
+		for (int i = 2; i <= n; i++) {
+			for (int j = 0; j < i; j++) {
+				res[i] = res[j] * res[i - j - 1];
+			}
+		}
+		return res[n];
+	}
+
+	public static void main(String[] args) {
+		CatalanNumbers ob = new CatalanNumbers();
+		System.out.println(ob.findCatalan(3));
+	}
+
+}

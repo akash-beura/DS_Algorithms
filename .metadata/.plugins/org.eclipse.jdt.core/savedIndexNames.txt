@@ -1,0 +1,21 @@
+INDEX VERSION 1.131+C:\Users\M1049006\Desktop\Core Java workspac\.metadata\.plugins\org.eclipse.jdt.core
+36352965.index
+3399427057.index
+3493309310.index
+94415322.index
+1524165945.index
+4243631064.index
+4176526619.index
+3590809499.index
+139126960.index
+103744111.index
+1195455883.index
+1283382141.index
+1792686054.index
+2234424128.index
+911381322.index
+2091962764.index
+4282464378.index
+3325851901.index
+3127865126.index
+3540782016.index

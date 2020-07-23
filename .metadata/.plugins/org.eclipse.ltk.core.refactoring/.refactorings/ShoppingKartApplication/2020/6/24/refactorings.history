@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;name&apos; in &apos;com.mindtree.shoppingapp.controller.ShoppingAppController.fetchUniqueProduct(...)&apos; to &apos;productName&apos;&#x0D;&#x0A;- Original project: &apos;ShoppingKartApplication&apos;&#x0D;&#x0A;- Original element: &apos;com.mindtree.shoppingapp.controller.ShoppingAppController.fetchUniqueProduct(String).name&apos;&#x0D;&#x0A;- Renamed element: &apos;name&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;name&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src\/main\/java&lt;com.mindtree.shoppingapp.controller{ShoppingAppController.java[ShoppingAppController~fetchUniqueProduct~QString;@name!1121!1145!1142!1145!QString;!0!true" name="productName" references="true" stamp="1591608947158" version="1.0"/>
+</session>

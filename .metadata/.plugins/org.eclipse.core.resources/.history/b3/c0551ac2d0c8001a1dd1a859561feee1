@@ -1,0 +1,18 @@
+package backtracking;
+
+public class StringPermutation {
+
+	public void stringPermutation(char[] word, int[] count, char[] result, int level) {
+		if (level == result.length) {
+			System.out.println(String.valueOf(result));
+		}
+
+		for (int i = 0; i < word.length; i++) {
+			if (count[i] > 0) {
+				result[level] = word[i];
+				stringPermutation(word, count, result, level + 1);
+			}
+		}
+	}
+
+}

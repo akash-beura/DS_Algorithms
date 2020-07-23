@@ -1,0 +1,26 @@
+package graphs;
+
+import java.util.LinkedList;
+
+class Graph {
+	private int V;
+	private LinkedList<Integer>[] adj;
+
+	Graph(final int v) {
+		this.V = v;
+		adj = new LinkedList[v];
+		for (int i = 0; i < v; i++) {
+			adj[v] = new LinkedList<>();
+		}
+	}
+
+	public void DFSUtil(int v, boolean[] visited) {
+		visited[v] = true;
+		System.out.println(v);
+	}
+
+}
+
+public class GraphTraversal {
+
+}

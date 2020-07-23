@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;ptrLoc&apos; in &apos;com.wityo.arrays.Test.main(...)&apos; to &apos;startLocation&apos;&#x0D;&#x0A;- Original project: &apos;DSA&apos;&#x0D;&#x0A;- Original element: &apos;com.wityo.arrays.Test.main(String[]).ptrLoc&apos;&#x0D;&#x0A;- Renamed element: &apos;ptrLoc&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;ptrLoc&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;com.wityo.arrays{Test.java[Test~main~\[QString;@ptrLoc!508!522!512!517!I!0!false" name="startLocation" references="true" stamp="1593787788063" version="1.0"/>
+</session>
